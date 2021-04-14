@@ -3,9 +3,13 @@ body, p {
 }
 
 body {
-   /* background-color: wheat; */
-   background-color: coral;
+   background-color: wheat;
+   /* background-color: coral; */
 
+}
+
+h1, h2 {
+   text-align: center;
 }
 
 
