@@ -1,0 +1,332 @@
+body {
+   margin: 0;
+   background-color: rgba(136, 223, 110, 0.082);
+}
+
+.background {
+   width: 100%;
+   height: 100%;
+   /* display: flex;
+   align-items: center;
+   justify-content: center; */
+}
+
+.division {
+   border: 10px solid rgba(136, 223, 110, 0.493);
+   width: 320px;
+   height: 320px;
+   margin-top: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 50%;
+   position: relative;
+   background-color: honeydew;
+   box-shadow: rgba(36, 59, 29, 0.493) 5px 5px 5px 1px;
+}
+
+.division-element {
+   position: absolute;
+   top: 158px;
+   left:0px;
+   width: 320px;
+   height: 0px;
+   border-top: 4px solid black;
+}
+
+.division-small {
+   position: absolute;
+   top: 159px;
+   left:0px;
+   width: 320px;
+   height: 0px;
+   border-top: 2px solid rgb(175, 174, 174);
+}
+
+.division-nine-one {
+   transform: rotateZ(-6deg);
+}
+
+.division-nine-two {
+   transform: rotateZ(-12deg);
+}
+
+.division-nine-three {
+   transform: rotateZ(-18deg);
+}
+
+.division-nine-four {
+   transform: rotateZ(-24deg);
+}
+
+
+
+/* 12 */
+
+.division-twelwe {
+   transform: rotateZ(90deg);
+}
+
+
+.division-twelwe-one {
+   transform: rotateZ(84deg);
+}
+
+.division-twelwe-two {
+   transform: rotateZ(78deg);
+}
+
+.division-twelwe-three {
+   transform: rotateZ(72deg);
+}
+
+.division-twelwe-four {
+   transform: rotateZ(66deg);
+}
+
+/* 11 */
+
+.division-eleven {
+   transform: rotateZ(60deg);
+}
+
+.division-eleven-one {
+   transform: rotateZ(54deg);
+}
+
+.division-eleven-two {
+   transform: rotateZ(48deg);
+}
+
+.division-eleven-three {
+   transform: rotateZ(42deg);
+}
+
+.division-eleven-four {
+   transform: rotateZ(36deg);
+}
+
+/* 10 */
+
+.division-ten {
+   transform: rotateZ(30deg);
+}
+
+.division-ten-one {
+   transform: rotateZ(24deg);
+}
+
+.division-ten-two {
+   transform: rotateZ(18deg);
+}
+
+.division-ten-three {
+   transform: rotateZ(12deg);
+}
+
+.division-ten-four {
+   transform: rotateZ(6deg);
+}
+
+/* 8 */
+
+.division-eight {
+   transform: rotateZ(-30deg);
+}
+
+.division-eight-one {
+   transform: rotateZ(-36deg);
+}
+
+.division-eight-two {
+   transform: rotateZ(-42deg);
+}
+
+.division-eight-three {
+   transform: rotateZ(-48deg);
+}
+
+.division-eight-four {
+   transform: rotateZ(-54deg);
+}
+
+/* 7 */
+
+.division-seven {
+   transform: rotateZ(-60deg);
+}
+
+.division-seven-one {
+   transform: rotateZ(-66deg);
+}
+
+.division-seven-two {
+   transform: rotateZ(-72deg);
+}
+
+.division-seven-three {
+   transform: rotateZ(-78deg);
+}
+
+.division-seven-four {
+   transform: rotateZ(-84deg);
+}
+
+
+.clock-face {
+   /* border: 1px solid rgb(62, 192, 83); */
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   position: absolute;
+   top:10px;
+   left:10px;
+   box-sizing: border-box;
+   background-color: honeydew;
+}
+
+.clock-face > div {
+   position: absolute;
+   top: 150px;
+   left: 150px;
+}
+
+.clock-face > .number {
+   position: absolute;
+   top: 140px;
+   left: 10px;
+}
+
+.number-element {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   /* border: 1px solid green; */
+   height: 20px;
+   width: 280px;
+}
+
+.number-twelve {
+   transform: rotateZ(90deg);
+   font-size: 20px;
+}
+
+.number-eleven {
+   transform: rotateZ(60deg);
+}
+
+.number-ten {
+   transform: rotateZ(30deg);
+}
+
+.number-nine {
+   font-size: 20px;
+}
+
+.number-eight {
+   transform: rotateZ(-30deg);
+}
+
+.number-seven {
+   transform: rotateZ(-60deg);
+}
+
+.number-element > span {
+   display: inline-block;
+   /* border: 1px solid green; */
+}
+
+.number-twelve > span {
+   transform: rotateZ(-90deg);
+}
+
+.number-eleven > span {
+   transform: rotateZ(-60deg);
+}
+
+.number-ten > span {
+   transform: rotateZ(-30deg);
+}
+
+.number-eight > span {
+   transform: rotateZ(30deg);
+}
+
+.number-seven > span {
+   transform: rotateZ(60deg);
+}
+
+
+.clock-face > .logo img {
+   position: absolute;
+   left:-50px;
+   top:-70px;
+   width: 100px;
+   height: auto;
+   /* border: 1px solid blue; */
+}
+
+
+
+/* arrows */
+
+.clock-face > .hour {
+   width: 100px;
+   border-top: 4px solid black;
+   position: absolute;
+   top: 148px;
+   left: 150px;
+   transform: rotateZ(-90deg);
+   transform-origin: left;
+   animation-name: hour;
+   animation-duration: 43200s;
+   animation-timing-function: steps(60, end);
+   animation-iteration-count: infinite;
+}
+
+
+.clock-face > .minute {
+   width: 145px;
+   border-top: 2px solid black;
+   position: absolute;
+   top: 149px;
+   left: 150px;
+   transform: rotateZ(-90deg);
+   transform-origin: left;
+   animation-name: minute;
+   animation-duration: 3600s;
+   animation-timing-function: steps(60, end);
+   animation-iteration-count: infinite;
+}
+
+.clock-face > .second {
+   width: 155px;
+   border-top: 1px solid red;
+   position: absolute;
+   top: 149.5px;
+   left: 150px;
+   transform: rotateZ(-90deg);
+   transform-origin: left;
+   animation-name: second;
+   animation-duration: 60s;
+   animation-timing-function: steps(60, end);
+   animation-iteration-count: infinite;
+}
+
+@keyframes second {
+   from {transform: rotateZ(-90deg);}
+   to {transform: rotateZ(270deg);}
+}
+
+@keyframes minute {
+   from {transform: rotateZ(-90deg);}
+   to {transform: rotateZ(270deg);}
+}
+
+@keyframes hour {
+   from {transform: rotateZ(-90deg);}
+   to {transform: rotateZ(270deg);}
+}
+

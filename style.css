@@ -18,6 +18,22 @@ h1, h2 {
    text-align: center;
 }
 
+a.transition {
+   text-decoration: none;
+   color: darkblue;
+   font-size: 26px;
+   text-align: center;
+   display: block;
+   margin-top: 100px;
+   background-color: rgba(241, 160, 9, 0.507);
+   width: 400px;
+   margin-left: auto;
+   margin-right: auto;
+   border: 2px solid orange;
+   box-sizing: border-box;
+   box-shadow: rgba(241, 160, 9, 0.507) 4px 4px 5px 1px;;
+}
+
 
 .clock-face {
    width: 400px;
